@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LHR16 DOOR HANDLE - Quarterly inspection</title>
+<style>
+:root{--bg:#f4f5f7;--card:#fff;--tx:#1b1f24;--mu:#667085;--bd:#d9dde3;--g:#1f9d55;--a:#e8a010;--r:#d93636;--pr:#0b3d91;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14161a;--card:#1e2126;--tx:#eceef1;--mu:#9aa3af;--bd:#343a42;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#14161a;--card:#1e2126;--tx:#eceef1;--mu:#9aa3af;--bd:#343a42;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.4 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+header{background:var(--pr);color:#fff;padding:14px 16px;display:flex;justify-content:space-between;align-items:center}
+header h1{font-size:17px;margin:0}header img{height:40px;background:#fff;border-radius:8px;padding:2px 6px}
+main{max-width:720px;margin:0 auto;padding:12px}
+section{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:14px;margin-bottom:12px}
+h2{font-size:13px;text-transform:uppercase;letter-spacing:.6px;color:var(--mu);margin:0 0 10px}
+label{display:block;font-size:12px;color:var(--mu);margin:8px 0 3px}
+input,textarea{width:100%;font:inherit;color:var(--tx);background:var(--bg);border:1px solid var(--bd);border-radius:8px;padding:9px}
+textarea{min-height:52px;resize:vertical}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;text-align:center}
+.stat{border-radius:10px;padding:8px 2px;background:var(--bg);border:1px solid var(--bd)}
+.stat b{display:block;font-size:22px}.stat span{font-size:11px;color:var(--mu)}
+.stat.g b{color:var(--g)}.stat.a b{color:var(--a)}.stat.r b{color:var(--r)}
+.bar{height:8px;border-radius:4px;background:var(--bd);margin-top:10px;overflow:hidden}.bar i{display:block;height:100%;background:var(--g);width:0}
+#issues .it{border-left:5px solid;padding:6px 10px;margin-top:8px;background:var(--bg);border-radius:6px;font-size:14px}
+.it.a{border-color:var(--a)}.it.r{border-color:var(--r)}.it small{color:var(--mu);display:block}
+.none{color:var(--mu);font-size:14px;margin:10px 0 0}
+.fl{font-weight:700;margin:14px 0 6px;display:flex;justify-content:space-between;align-items:center}
+.fl button{font-size:12px;padding:5px 10px}
+.ent{border:1px solid var(--bd);border-radius:10px;padding:10px;margin-bottom:8px;background:var(--card)}
+.ent.g{border-left:6px solid var(--g)}.ent.a{border-left:6px solid var(--a)}.ent.r{border-left:6px solid var(--r)}
+.rag{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:8px 0}
+.rag button{border:2px solid var(--bd);background:var(--bg);color:var(--tx);border-radius:8px;padding:8px 2px;font-size:12px;font-weight:600;line-height:1.2}
+.rag button small{display:block;font-weight:400;font-size:10px;color:var(--mu)}
+.rag .g.on{background:var(--g);border-color:var(--g);color:#fff}.rag .a.on{background:var(--a);border-color:var(--a);color:#000}.rag .r.on{background:var(--r);border-color:var(--r);color:#fff}
+.rag .on small{color:inherit}
+button{font:inherit;cursor:pointer}
+.btn{border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:8px;padding:8px 12px}
+.btn.p{background:var(--pr);border-color:var(--pr);color:#fff;font-weight:600}
+.ph{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.ph img{width:64px;height:64px;object-fit:cover;border-radius:8px;border:1px solid var(--bd)}
+.ph input{display:none}
+canvas{width:100%;height:130px;background:var(--bg);border:1px dashed var(--mu);border-radius:8px;touch-action:none}
+.acts{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.del{color:var(--r);float:right;border:0;background:none;font-size:12px}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);display:flex;gap:6px;overflow-x:auto;padding:8px 12px;max-width:720px;margin:0 auto;border-bottom:1px solid var(--bd)}nav button{flex:none;min-width:46px;border:2px solid var(--bd);background:var(--card);color:var(--tx);border-radius:18px;padding:6px 12px;font-size:13px;font-weight:600;position:relative}nav button.on{background:var(--pr);border-color:var(--pr);color:#fff}nav button i{position:absolute;top:-3px;right:-3px;width:10px;height:10px;border-radius:50%;border:2px solid var(--bg)}.pn{display:flex;gap:8px;margin-top:10px}.pn button{flex:1}.sel{padding:6px;margin-bottom:6px;display:flex;gap:6px;overflow-x:auto}
+@media print{header~main .noprint,.acts,.rag button:not(.on),.del,.fl button,.ph label{display:none!important}body{background:#fff}.ent{break-inside:avoid}}
+</style></head><body>
+<header><h1>LHR16 DOOR HANDLE - Quarterly inspection</h1><img alt="JLL" src="data:image/jpeg;base64,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"></header>
+<main>
+<nav id="nav" class="noprint"></nav>
+<section><h2>Details</h2>
+<label>Work order no.</label><input id="wo" placeholder="e.g. WO-123456">
+<div class="row"><div><label>Date</label><input id="dt" type="date"></div><div><label>Engineer name</label><input id="en" placeholder="Full name"></div></div>
+<label>Site</label><div style="font-weight:700;padding:9px 0">1 Principal Place</div>
+</section>
+
+<section><h2>Summary</h2>
+<div class="stats">
+<div class="stat"><b id="sDone">0</b><span>Inspected</span></div>
+<div class="stat g"><b id="sG">0</b><span>Green</span></div>
+<div class="stat a"><b id="sA">0</b><span>Amber</span></div>
+<div class="stat r"><b id="sR">0</b><span>Red</span></div></div>
+<div class="bar"><i id="pb"></i></div>
+<div style="font-size:12px;color:var(--mu);margin-top:4px" id="pt"></div>
+<div id="issues"></div>
+</section>
+
+<section><h2 id="ft">Inspection</h2>
+<div style="font-size:12px;color:var(--mu)"><b style="color:var(--g)">Green</b> secure, fit for purpose &middot; <b style="color:var(--a)">Amber</b> loose / needs attention &middot; <b style="color:var(--r)">Red</b> urgent attention</div>
+<div id="floors"></div><div class="pn noprint"><button class="btn" id="pv">&larr; Previous floor</button><button class="btn p" id="nx">Next floor &rarr;</button></div>
+</section>
+
+<section><h2>Completed by</h2>
+<canvas id="sig"></canvas>
+<div class="acts"><button class="btn" id="clr">Clear signature</button></div>
+</section>
+<div class="acts" style="padding-bottom:20px"><button class="btn p" id="pdf">Convert to PDF</button><button class="btn" id="rst">Reset to New</button></div>
+</main>
+<script>
+var FL=["Basement 2","Basement 1","Ground"];for(var i=1;i<=16;i++)FL.push("Floor "+i);
+var LB={g:["Green","Secure"],a:["Amber","Loose"],r:["Red","Urgent"]};
+var S={wo:"",dt:"",en:"",e:[]},CUR=0,SHORT=function(f){return f==="Basement 2"?"B2":f==="Basement 1"?"B1":f==="Ground"?"G":f.slice(6)};
+var $=function(i){return document.getElementById(i)};
+function save(){try{localStorage.setItem("dhi",JSON.stringify(S))}catch(x){}}
+function load(){try{var v=localStorage.getItem("dhi");if(v)S=JSON.parse(v)}catch(x){}}
+function blank(f){return{f:f,d:"",s:"",n:"",p:""}}
+function init(){if(!S.e.length)FL.forEach(function(f){S.e.push(blank(f))})}
+function esc(t){return String(t).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function render(){
+ var h="";
+ $("ft").textContent=FL[CUR];
+ FL.forEach(function(f){if(f!==FL[CUR])return;
+  h+='<div class="fl"><span>Doors on '+f+'</span><button class="btn noprint" data-add="'+esc(f)+'">+ Add door</button></div>';
+  S.e.forEach(function(e,i){if(e.f!==f)return;
+   h+='<div class="ent '+e.s+'">'+(S.e.filter(function(x){return x.f===f}).length>1?'<button class="del" data-del="'+i+'">Remove</button>':'')+
+   '<input data-k="d" data-i="'+i+'" placeholder="Door / location (e.g. Stair core A, Room 4.12)" value="'+esc(e.d)+'">'+
+   '<div class="rag">'+["g","a","r"].map(function(k){return '<button class="'+k+(e.s===k?' on':'')+'" data-s="'+k+'" data-i="'+i+'">'+LB[k][0]+'<small>'+(k==="g"?"Fit for purpose":k==="a"?"Loose / attention":"Urgent")+'</small></button>'}).join("")+'</div>'+
+   (e.s&&e.s!=="g"?'<textarea data-k="n" data-i="'+i+'" placeholder="Describe the defect">'+esc(e.n)+'</textarea>':'')+
+   '<div class="ph" style="margin-top:6px">'+(e.p?'<img src="'+e.p+'" alt="">':'')+'<label class="btn" style="margin:0;color:var(--tx);font-size:13px">&#128247; '+(e.p?'Retake':'Add photo')+'<input type="file" accept="image/*" capture="environment" data-ph="'+i+'"></label>'+(e.p?'<button class="btn" data-rp="'+i+'">Remove</button>':'')+'</div></div>';
+  });
+ });
+ $("floors").innerHTML=h;summary();nav();
+}
+function nav(){
+ var h="";FL.forEach(function(f,i){
+  var es=S.e.filter(function(e){return e.f===f}),col="";
+  if(es.some(function(e){return e.s==="r"}))col="var(--r)";else if(es.some(function(e){return e.s==="a"}))col="var(--a)";else if(es.length&&es.every(function(e){return e.s}))col="var(--g)";else if(es.some(function(e){return e.s}))col="var(--mu)";
+  h+='<button data-c="'+i+'" class="'+(i===CUR?"on":"")+'">'+SHORT(f)+(col?'<i style="background:'+col+'"></i>':'')+'</button>'});
+ $("nav").innerHTML=h;var b=$("nav").querySelector(".on");if(b&&b.scrollIntoView)try{$("nav").scrollLeft=b.offsetLeft-80}catch(x){}
+}
+function go(i){CUR=Math.max(0,Math.min(FL.length-1,i));render()}
+$("nav").addEventListener("click",function(e){var b=e.target.closest("button");if(b)go(+b.dataset.c)});
+$("pv").onclick=function(){go(CUR-1)};$("nx").onclick=function(){go(CUR+1)};
+function summary(){
+ var c={g:0,a:0,r:0},iss="";
+ S.e.forEach(function(e){if(e.s)c[e.s]++;});
+ var done=c.g+c.a+c.r;
+ $("sDone").textContent=done;$("sG").textContent=c.g;$("sA").textContent=c.a;$("sR").textContent=c.r;
+ var fd=FL.filter(function(f){return S.e.some(function(e){return e.f===f&&e.s})}).length;
+ $("pb").style.width=(fd/FL.length*100)+"%";$("pt").textContent=fd+" of "+FL.length+" floors inspected";
+ ["r","a"].forEach(function(k){S.e.forEach(function(e){if(e.s===k)iss+='<div class="it '+k+'"><b>'+e.f+'</b> &ndash; '+LB[k][0]+(k==="r"?" (urgent)":" (needs attention)")+'<small>'+esc(e.d||"Door not specified")+(e.n?": "+esc(e.n):"")+'</small></div>'})});
+ $("issues").innerHTML=iss?'<h2 style="margin-top:14px">Needs attention</h2>'+iss:'<p class="none">'+(done?"No loose handles reported.":"Issues will appear here.")+'</p>';
+}
+$("floors").addEventListener("click",function(ev){
+ var t=ev.target.closest("button,label");if(!t)return;
+ if(t.dataset.s){var e=S.e[t.dataset.i];e.s=e.s===t.dataset.s?"":t.dataset.s;save();render()}
+ else if(t.dataset.add){var f=t.dataset.add,last=0;S.e.forEach(function(x,i){if(x.f===f)last=i});S.e.splice(last+1,0,blank(f));save();render()}
+ else if(t.dataset.del){S.e.splice(t.dataset.del,1);save();render()}
+ else if(t.dataset.rp){S.e[t.dataset.rp].p="";save();render()}
+});
+$("floors").addEventListener("input",function(ev){var t=ev.target;if(t.dataset.k){S.e[t.dataset.i][t.dataset.k]=t.value;save();if(t.dataset.k==="n"||t.dataset.k==="d")summary()}});
+$("floors").addEventListener("change",function(ev){
+ var t=ev.target;if(t.dataset.ph===undefined||!t.files[0])return;
+ var i=t.dataset.ph,r=new FileReader();
+ r.onload=function(){var im=new Image();im.onload=function(){
+  var m=720,s=Math.min(1,m/Math.max(im.width,im.height)),c=document.createElement("canvas");
+  c.width=im.width*s;c.height=im.height*s;c.getContext("2d").drawImage(im,0,0,c.width,c.height);
+  S.e[i].p=c.toDataURL("image/jpeg",.7);save();render()};im.src=r.result};
+ r.readAsDataURL(t.files[0]);
+});
+["wo","dt","en"].forEach(function(k){$(k).addEventListener("input",function(){S[k]=this.value;save()})});
+/* signature */
+var cv=$("sig"),cx,dr=false;
+function setup(){var r=cv.getBoundingClientRect();if(!r.width)return;cv.width=r.width*2;cv.height=r.height*2;cx=cv.getContext("2d");cx.scale(2,2);cx.lineWidth=2;cx.lineCap="round";cx.strokeStyle=getComputedStyle(document.body).color}
+function pt(e){var r=cv.getBoundingClientRect();return[e.clientX-r.left,e.clientY-r.top]}
+cv.addEventListener("pointerdown",function(e){dr=true;cv.setPointerCapture(e.pointerId);var p=pt(e);cx.beginPath();cx.moveTo(p[0],p[1])});
+cv.addEventListener("pointermove",function(e){if(!dr)return;var p=pt(e);cx.lineTo(p[0],p[1]);cx.stroke()});
+cv.addEventListener("pointerup",function(){dr=false});
+$("clr").onclick=setup;
+$("pdf").onclick=function(){window.print()};
+$("rst").onclick=function(){if(!confirm("Clear everything and start a new inspection?"))return;S={wo:"",dt:"",en:"",e:[]};CUR=0;init();save();fill();render();setup()};
+function fill(){["wo","dt","en"].forEach(function(k){$(k).value=S[k]||""});if(!S.dt){S.dt=new Date().toISOString().slice(0,10);$("dt").value=S.dt}}
+load();init();fill();render();setup();
+</script></body></html>
